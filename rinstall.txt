@@ -1,0 +1,23 @@
+#!/bin/bash
+
+To Enter RStudio (in terminal):
+
+R
+
+Once in RStudio, copy the following (this will take a while to run):
+
+install.packages("jsonlite") 
+BiocManager::install("DESeq2")
+install.packages("gprofiler2")
+install.packages("optparse")
+install.packages("tidyverse")
+install.packages("pheatmap")
+BiocManager::install("vsn")
+BiocManager::install("EnhancedVolcano")
+install.packages("ashr")
+install.packages("hexbin")
+install.packages("patchwork")
+install.packages("languageserver")
+
+# Exit RStudio
+q()
