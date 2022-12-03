@@ -1,10 +1,10 @@
-### Process Analyze RNA-Seq Data and Produce Gene Ontology Analysis
+# Process Analyze RNA-Seq Data and Produce Gene Ontology Analysis
 
 Author: Pranav Mahableshwarkar 
 Justin Currie's DESeq2 Script and Ashley Conard's Time2Splice are implemented in this pipeline!
 
 ## Package Installation:
-# Oscar Modules
+### Oscar Modules
 This package installation guide is largely meant for Oscar usage as the installation of R packages is a little
 more complex! The following modules are necessary for the R package installation shell script:
 
@@ -15,7 +15,7 @@ module load gcc/10.2 pcre2/10.35 intel/2020.2 texlive/2018
 You can add these to the .modules file in your home directory of Oscar so that they are loaded automatically
 when you open a new Oscar terminal/access the login node. 
 
-# R Packages
+### R Packages
 Once all of the above modules are installed, you have to enter RStudio (in the login node) and run the package
 installations that are documented in the rinstall.txt file. 
 
@@ -23,17 +23,17 @@ This will take a while, but it will install all of the necessary R packages. For
 
 When you run the installation, you will be prompted three times. The first two prompts will ask you about local package installation - enter "y" for both (you will never have to do this again). Then it will ask you to select a CRAN mirror. Choose the mirror for US - [OH] - which was number 76 for me.
 
-# Folder Setup
+### Folder Setup
 Go to scripts/1_setup and run the folder structure create script. The specific instructions are provided in the shell script. 
 
 If you need to upload FastQ files to Oscar, you can use the ii_importFQ.sh file to handle that. 
 
 ## Run the Analysis
-# Part One: Preprocess
+### Part One: Preprocess
 Following the rules outlined in the preprocess.sh file you can run the preprocess script. The preprocess.sh script is designed to automatically make CountsTables for 16 total samples (4 replicates for 4 sample types maximum). However, the individual scripts for each step of the preprocessing can be found in 
 2_Run/runcomponents. 
 
-# Part Two: Analysis
+### Part Two: Analysis
 Once the CountsTable is made, you will have to edit the CountsTable produced before it can be run in analysis. 
 For some reason, featurecounts keeps the entire filepath for each .bam file. Remove the extraneous information so the headings look something like this:
 
