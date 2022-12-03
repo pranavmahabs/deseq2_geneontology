@@ -1,6 +1,6 @@
-# Process Analyze RNA-Seq Data and Produce Gene Ontology Analysis
+# Process & Analyze RNA-Seq Data and Produce Gene Ontology Analysis
 
-Author: Pranav Mahableshwarkar 
+Author: Pranav Mahableshwarkar \n
 Justin Currie's DESeq2 Script and Ashley Conard's Time2Splice are implemented in this pipeline!
 
 ## Package Installation:
